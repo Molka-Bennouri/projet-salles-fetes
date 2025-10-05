@@ -1,0 +1,256 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: background-image 1s ease-in-out;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f3e0e7;
+    color: white;
+    padding: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo img {
+    width: 4%;
+    height: 31%;
+
+    top: 10px;
+    left: 20px;
+    margin-left: 45%;
+    padding: 5px 10px;
+
+    position: absolute;
+    justify-content: center;   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+nav ul li {
+    position: relative;
+    padding: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(46, 45, 45);
+    display: block;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.6s ease;
+    font-family: century;
+}
+
+nav ul li a:hover {
+    background: rgb(48, 46, 46);
+    color: rgb(253, 250, 250);
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 100%;
+    margin-top: 5px;
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dropdown-content li {
+    margin: 0;
+    display: block;
+}
+.dropdown-content li a {
+    padding: 10px 15px;
+    display: block;
+}
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out; /* Animation fluide */
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+  
+.background {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out; /* Animation fluide */
+}
+  
+.content {
+    position: relative;
+    z-index: 10; /* Assurez-vous que le contenu reste visible */
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding-top: 2%;
+    margin-top: 20%;
+}
+
+.suggestions {
+    padding: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.suggestions h2 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-style: italic; /* Optional: Adds a stylish look */
+    text-align: center; /* Ensures the title is centered */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Centers the cards horizontally */
+    /* flex-wrap: wrap;  Allows wrapping if there are too many cards */
+    gap: 30px; /* Spacing between cards */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 270px;
+    height: 270px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover; /* Ensures consistent image size */
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #dfacbe;
+}
+
+.card button {
+    background-color: #ff0080;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card:hover{
+    transition: ease;
+    transform: scale(1.1);
+}
+
+.contact {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #f3e0e7;
+    padding: 15px;
+    display: flex; /* Ajoute ce flex pour centrer le contenu */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    min-height: 200px; /* Assure une hauteur suffisante pour le footer */
+    
+  }
+  
+#contact-form {
+    width: 100%;
+    max-width: 400px; /* Ajuste la largeur du formulaire */
+    margin: 0 auto;
+    margin-left: 34%;
+}
+fieldset{
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+legend{
+    color: #333;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 0 10px;
+}
+  
+label{
+    color: #333;
+    font-size: 1em;
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input[type="text"],input[type="tel"],input[type="email"], textarea{
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+textarea{margin-top: 20px;}
+  
+input[type="submit"]{
+    color: white;
+    background-color: palevioletred;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Animation fluide */
+}
+  
+input[type="submit"]:hover{
+    background-color: rgb(169, 87, 114);
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Accueil</title>
+    <link rel="stylesheet" href="../css/acceuil.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../logo.png" alt="Logo" id="img" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="acceuil.html">Accueil</a></li> 
+                    <li class="dropdown">
+                        <a href="#">Localisations disponibles</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Boumhel</a></li>
+                            <li><a href="#">Gammarth</a></li>
+                            <li><a href="#">La Marsa</a></li>
+                            <li><a href="#">Morneg</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="reservation.html">Réservation</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <a name="acceuil"></a>
+    <section>
+      <div class="background">
+        <div class="content">
+          <h1>Bienvenue sur notre site</h1>
+          <p>Découvrez nos salles</p>
+        </div>
+      </div>
+      <script src="images.js"></script>
+    </section>
+
+    <section class="suggestions">
+        <div class="card-container">
+            <div class="card">
+                <img src="../dar lella.jpg" alt="">
+                <h3>Dar lella & Dar el baya</h3>
+                <a href="../dar/darlella.html" target="_blank"><button>Plus d’infos</button></a>
+            </div>
+    
+            <div class="card">
+                <img src="../podium.jpg" alt="">
+                <h3>Podium</h3>
+                <a href="../podium/podium.html" target="_blank"><button>Plus d’infos</button></a>
+            </div>
+    
+            <div class="card">
+                <img src="../Haifa-Palace.jpg" alt="">
+                <h3>Haifa Palace</h3>
+                <a href="../haifa palace/haifapalace.html" target="_blank"><button>Plus d’infos</button></a>
+            </div>
+    
+            <div class="card">
+                <img src="../zenine.jpg" alt="">
+                <h3>Zenine Queen</h3>
+                <a href="../zenine/zenine.html" target="_blank"><button>Plus d’infos</button></a>
+            </div>
+        </div>
+    </section>    
+
+    <footer class="contact">
+        <div id="contact-form">
+            <fieldset>
+                <legend>Contactez-nous</legend>
+                <form action="../php/contact.php" method="post">
+                    <label for="nom">Nom et Prénom</label>
+                    <input type="text" id="nom" name="nom" required> <br>
+            
+                    <label for="numero">Numéro de Téléphone</label>
+                    <input type="text" id="numero" name="numero" required> <br>
+            
+                    <label for="email">Adresse Email</label>
+                    <input type="email" id="email" name="email" required> <br>
+            
+                    <textarea name="message" id="message" rows="5" cols="30" placeholder="Laisser un message"></textarea> <br>
+            
+                    <input type="submit" value="Envoyer">
+                </form>
+            </fieldset>
+        </div>
+    </footer>
+</body>
+</html>

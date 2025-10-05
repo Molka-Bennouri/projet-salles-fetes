@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenine Queen</title>
+    <link rel="stylesheet" href="zenine.css" /> 
+  </head>
+  <body>
+    <header>
+      <div class="container">
+          <div class="logo">
+              <img src="../logo.png" alt="Logo" id="img" />
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="../html/acceuil.html">Accueil</a></li> 
+                  <li class="dropdown">
+                      <a href="#">Localisations disponibles</a>
+                      <ul class="dropdown-content">
+                          <li><a href="#">Boumhel</a></li>
+                          <li><a href="#">Gammarth</a></li>
+                          <li><a href="#">La Marsa</a></li>
+                          <li><a href="#">Morneg</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="../html/reservation.html">Réservation</a></li>
+                  <li><a href="/html/inscription.html">Inscription</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Zenine Queen</h1>
+      <p>Salle de mariage entièrement couverte</p>
+      <address>Espace des Fetes Zinine, Boumhel El Bassatine</address>
+      <div class="rating">⭐⭐⭐⭐⭐</div>
+    </div>
+  </section>
+
+  </section>
+    <main class="container0">
+      <section class="description">
+        <h2>Description: Zenine Queen</h2>
+        <p>
+          La Salle de Fête Zinine Queen est un espace élégant et idéal pour célébrer vos mariages.
+          Dotée d’un aménagement moderne et fonctionnel,
+          elle offre un cadre agréable et adapté à vos besoins pour assurer la réussite de votre événement.
+          De plus, elle propose un service de bar à cocktails de haute qualité, parfait pour ravir vos invités.
+        </p>
+        <ul>
+          <li>Un hall d’accueil spacieux pour recevoir vos invités.</li>
+          <li>Une équipe de professionnels, pour garantir un service de qualité.</li>
+          <li>Un parking d’une capacité de 150 places.</li>
+        </ul>
+      </section>
+
+      <div class="container2">
+        <div class="hours">
+          <h3>Horaire d'ouverture</h3>
+          <div class="hours-row">
+            <span>Lundi</span>
+            <span>10:00 - 00:00</span>
+          </div>
+          <div class="hours-row">
+            <span>Mardi</span>
+            <span>10:00 - 00:00</span>
+          </div>
+          <div class="hours-row">
+            <span>Mercredi</span>
+            <span>10:00 - 00:00</span>
+          </div>
+          <div class="hours-row">
+            <span>Jeudi</span>
+            <span>10:00 - 00:00</span>
+          </div>
+          <div class="hours-row">
+            <span>Vendredi</span>
+            <span>10:00 - 00:00</span>
+          </div>
+          <div class="hours-row">
+            <span>Samedi</span>
+            <span>10:00 - 00:00</span>
+          </div>
+          <div class="hours-row">
+            <span>Dimanche</span>
+            <span>10:00 - 00:00</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container1">
+      <!-- Gallery Section -->
+      <main class="gallery">
+        <div class="main-image">
+          <img src="zenine1.jpg" id="main-img" />
+        </div>
+        <div class="thumbnails">
+          <img src="zenine2.jpg" onclick="changeImage('zenine2.jpg')" />
+          <img src="zenine3.jpg" onclick="changeImage('zenine3.jpg')" />
+          <img src="zenine4.jpg" onclick="changeImage('zenine4.jpg')" />
+          <img src="zenine6.jpg" onclick="changeImage('zenine6.jpg')" />
+        </div>
+      </main>
+
+      <aside class="sidebar">
+        <h2>Zenine Queen</h2>
+        <p><strong>Adresse:</strong> Espace des Fetes Zinine, Boumhel El Bassatine </p>
+        
+        <div class="social-icons">
+          <a href="https://www.facebook.com/p/Zinine-queen-100069309763548/?locale=fr_FR"><img src="../fbicon.png" /></a>
+          <a href="https://www.instagram.com/zininequeen/?hl=fr"><img src="../instaicon.jpg" /></a>
+        </div>
+
+        <button class="btn pink"><a href="../html/reservation.html">Réserver</a></button>
+        <p><strong>71896 visites</strong></p>
+        <p><strong>Status:</strong> <span class="status-open">Ouvert</span></p>
+      </aside>
+    </div>
+
+    <script>
+      // JavaScript for changing the main image
+      function changeImage(imageSrc) {
+        document.getElementById("main-img").src = imageSrc;
+      }
+    </script>
+
+    <footer>
+      <p>&copy; 2024 Zenine. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>
